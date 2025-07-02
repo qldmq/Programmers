@@ -8,9 +8,7 @@ class Solution {
         Set<Integer> key = new HashSet<>();
         
         for (int i : nums) {
-            if (key.contains(i)) {
-                answer++;
-            } else {
+            if (!key.contains(i)) {
                 key.add(i);
             }
             
